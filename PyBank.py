@@ -36,16 +36,21 @@ with open(csvpath) as csvfile:
 
     print(f"Financial Analysis")
     print(f"-------------------")
-
     print(f"Total Months": {str(total_months)})
     print(f"Total Amount": $ {str(net_pl)})
     print(f"Average Change: $ {str(average_change)})
     print(f"Greatest Increase in Profit": " + str(greatest_increase)")
     print(f"Greatest Decrease in Profit": " + str(greatest_decrease)")
 
-    output_path = os.path.join("..", "output", "Financial Analysis.csv")
+output_path = os.path.join("..", "output", "Financial Analysis.csv")
 
-    with open(output_path, 'w') as csvfile:
+with open(output_path, 'w') as csvfile:
 
-        csvwriter = csv.writer(csvfile, delimiter=',')
-    
+    csvwriter = csv.writer(csvfile, delimiter=',')
+    csvwriter.writerow(["Financial Analysis"])
+    csvwriter.writerow(["--------------------"])
+    csvwriter.writerow(["Total Months"])
+    csvwriter.writerow(["Total Amount"])
+    csvwriter.writerow(["Average Change"])
+    csvwriter.writerow(["Greatest Increase in Profit"])
+    csvwriter.writerow(["Greatest Decrease in Profit"])
