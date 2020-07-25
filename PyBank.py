@@ -37,6 +37,10 @@ with open(csvpath) as csvfile:
     print(f"Financial Analysis")
     print(f"-------------------")
 
-    
+    print(f"Total Months": {str(total_months)}")
+    print(f"Total Amount": $ {str(net_pl)})
+    print(f"Average Change: $ {str(average_change)}")
+    print(f"Greatest Increase in Profit: " + str(greatest_increase)")
+    print(f"Greatest Decrease in Profit: " + str(greatest_decrease)")
 
     
