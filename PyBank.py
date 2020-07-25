@@ -12,7 +12,7 @@ with open(csvpath) as csvfile:
 
     total_months = 0
     net_total = 0
-    avgerage_change = 0
+    average_change = 0
     greatest_incease = 0
     greatest_decrease = 0
     date = []
